@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Hello</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Community Event Registration</h1>
+
+        <!-- Form to get user input -->
+        <form id="reg">
+            <!-- Get name of user registered -->
+            <div class="form-item">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <label>Full Name <span class="red">*</span></label>
+                    </div>
+                    <div class="subtext">
+                        Only include alphabets and spaces
+                    </div>    
+                </div>
+                <div>
+                    <input id="name">
+                </div>
+            </div>
+            
+            <!-- Get name of user registered -->
+            <div class="form-item">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <label>Email <span class="red">*</span></label>
+                    </div>
+                    <div class="subtext">
+                        Only include alphabets and spaces
+                    </div>    
+                </div>
+                <div>
+                    <input id="email">
+                </div>
+            </div>
+
+            <!-- Get phone of user registered -->
+            <div class="form-item">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <label>Phone Number <span class="red">*</span></label>
+                    </div>
+                    <div class="subtext">
+                        10 digit numeric without country code
+                    </div>
+                </div>
+                <div>
+                    <input id="phone">
+                </div>
+            </div>
+
+            <!-- Get age of user registered -->
+            <div class="form-item">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <label>Age <span class="red">*</span></label>
+                    </div>
+                    <div class="subtext">
+                        Age should be greater than 18
+                    </div>
+                </div>
+                <div>
+                    <input id="age">
+                </div>
+            </div>
+
+            <div style="text-align: right;">
+                <input class="submit" type="submit" value="REGISTER">
+            </div>
+        </form>
+
+        <div id="form-submit"></div>
+
+    </div>
+</body>
+
+</html>
