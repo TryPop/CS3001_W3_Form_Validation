@@ -5,6 +5,7 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
 
     const formSubmit = document.getElementById('form-submit');
+    formSubmit.classList.remove('success', 'error');
     if (validateInput()) {
         formSubmit.innerHTML = "Your response has been recorded";
         formSubmit.classList.add('success');
